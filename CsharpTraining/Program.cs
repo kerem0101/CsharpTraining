@@ -16,3 +16,11 @@ foreach (var item in vehicleList)
     Console.WriteLine($"brand: {item.Brand}");
     Console.WriteLine($"model: {item.Model}");
 }
+
+OrangeJuice orangeJuice = new OrangeJuice();
+Cup cup = new Cup(orangeJuice);
+cup.Fill();
+
+Water water = new Water();  
+Cup cup2 = new Cup(water);
+cup2.Fill();
